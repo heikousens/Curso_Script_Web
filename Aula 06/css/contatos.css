@@ -1,0 +1,86 @@
+/* FOLHAS DE ESTILO DA PÃGINA DE CONTATOS */
+
+#contatos, #contatos label {
+    display: block;
+    width: 100%;
+}
+#contatos label {
+    padding-left: .5rem;
+    font-weight: bold;
+}
+#contatos input, #contatos textarea, #contatos button {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .3rem;
+    margin-top: .3rem;
+    border-radius: .2rem;
+    border: 1px solid grey;
+}
+#contatos textarea {
+    height: 6rem;
+}
+#contatos button {
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
+}
+#contatos button:hover {
+    background: red;
+}
+#contatos button:disabled {
+    background: #bbb;
+    color: #666;
+    cursor: not-allowed;
+}
+@media (min-width:425px) {
+    #contatos button {
+        width: auto;
+        padding: .5rem 1rem;
+    }
+}
+
+/* CAIXA DE MENSAGENS DE ERRO */
+#errocaixa {
+    display: none;
+    background: #ffc;
+    color: red;
+    padding: 1rem 1rem 0 1rem;
+    border: 2px solid red;
+    border-radius: .3rem;
+    margin: auto;
+    font-size: 90%;
+}
+#errofecha {
+    float: right;
+    margin: -.8rem -.5rem 1rem 1rem;
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#feedback {
+    display: none;
+}
+
+.ajudaBtn {
+    display: inline-block;
+    padding: .05rem .3rem;
+    background: #ff0;
+    color: #800;
+    border-radius: 50%;
+    cursor: help;
+}
+
+.ajudaMsg {
+    display: none;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: orange;
+}
+
+.hidden {
+    display: none !important;
+}

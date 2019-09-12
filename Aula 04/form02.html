@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Contatos - Site de Exemplo</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contatos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>HEADER / LOGO</header>
+    <nav>MENU PRINCIPAL</nav>
+    <main>
+
+<div id="feedback">
+    <h3>Olá XXXXXXXYZ!</h3>
+    <blockquote>Seu contato foi enviado para a equipe do site.</blockquote>
+    <p><i>Obrigado...</i></p>
+    <p class="text-center"><a href="JavaScript:history.go(-1)">&larr; Voltar</a></p>
+</div>
+
+<form action="http://luferat.net/form.php" target="_blank" method="post" name="contatos" id="contatos">
+
+    <h2>Faça contato conosco</h2>
+    <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+    <p class="text-red text-center"><small>Todos os campos devem ser preenchidos.</small></p>
+
+    <!-- Mensagens de erro -->
+    <div id="errocaixa">
+        <span id="errofecha">&times;</span>
+        <div id="erromsg"></div>
+    </div>
+    
+    <p>
+        <label for="contato_nome">Seu nome:</label>
+        <input type="text" name="contato_nome" id="contato_nome" placeholder="Seu nome completo.">
+    </p>
+    <p>
+        <label for="contato_email">Seu e-mail:</label>
+        <input type="text" name="contato_email" id="contato_email" placeholder="Seu endereço de e-mail.">
+    </p>
+    <p>
+        <label for="contato_assunto">Assunto:</label>
+        <input type="text" name="contato_assunto" id="contato_assunto" placeholder="Assunto do contato.">
+    </p>
+    <p>
+        <label for="contato_mensagem">Mensagem:</label>
+        <textarea name="contato_mensagem" id="contato_mensagem" placeholder="Escreva sua mensagem."></textarea>
+    </p>
+    <p>
+        <label for="contato_enviar"></label>
+        <button type="submit" name="contato_enviar" id="contato_enviar" value="Enviado">Enviar mensagem</button>
+    </p>
+</form>
+
+    </main>
+    <footer>RODAPÉ</footer>
+
+</div>    
+
+<script src="js/contatos.js"></script>
+</body>
+</html>

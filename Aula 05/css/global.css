@@ -1,0 +1,67 @@
+/* FOLHAS DE ESTILO DO TEMA */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+body {
+    padding: 1rem;
+    background-image: radial-gradient(white, black);
+    background-attachment: fixed;
+}
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255,0,0);
+}
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    min-width: 280px;
+    margin: auto;
+    background: #fff;
+    padding: 1rem;
+}
+.text-red {
+    color: red;
+}
+.text-center {
+    text-align: center;
+}
+
+header, nav, footer {
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px dashed #ccc;
+    color: #ccc;
+}
+nav {
+    border-top: 0;
+}
+nav, footer {
+    padding: .5rem;
+}
+
+#spinner {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; 
+}
+#spin {
+    background: #fff;
+    border-radius: 1rem;
+}

@@ -1,0 +1,45 @@
+/* FOLHAS DE ESTILO DA PÁGINA DE CONTATOS */
+
+#contatos, #contatos label{
+    display: block;
+    width: 100%;
+}
+
+#contatos label{
+    padding-left: .5rem;
+    font-weight: bold;
+}
+
+#contatos input, #contatos textarea, #contatos button{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .3rem;
+    margin-top: .3rem;
+    border-radius: .2rem;
+    border: 1px solid grey;
+}
+
+#contatos textarea {
+    height: 6rem;
+}
+#contatos button {
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
+}
+#contatos button:hover {
+    background: red;
+}
+
+#mensagem-erro{
+    background: #ffc;
+    color: red;
+    padding: 1rem 1rem 0 1rem;
+    border: 2px solid red;
+    border-radius: .3rem;
+    display: none;
+    margin: auto;
+    font-size: 90%;
+}

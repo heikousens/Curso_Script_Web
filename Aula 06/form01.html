@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Contatos - Site de Exemplo</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contatos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>HEADER / LOGO</header>
+    <nav>MENU PRINCIPAL</nav>
+    <main>
+
+<!-- Feedback de agradecimento pelo envio -->
+<div id="feedback"></div>
+
+<form action="http://luferat.net/form.php" target="_blank" method="post" name="contatos" id="contatos">
+
+    <h2>Faça contato conosco</h2>
+    <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+    <p class="text-red text-center"><small>Todos os campos devem ser preenchidos.</small></p>
+
+    <!-- Mensagens de erro -->
+    <div id="errocaixa">
+        <span id="errofecha">&times;</span>
+        <div id="erromsg"></div>
+    </div>
+
+    <p>
+        <label for="contato_nome">Seu nome: <small id="toggleNome" class="ajudaBtn" data-target="ajudaNome">?</small></label>
+        <small class="ajudaMsg" id="ajudaNome">Escreva seu nome completo sem abreviações.</small>
+        <input type="text" name="contato_nome" id="contato_nome" placeholder="Seu nome completo.">
+    </p>
+    <p>
+        <label for="contato_email">Seu e-mail: <small id="toggleEmail" class="ajudaBtn" data-target="ajudaEmail">?</small></label></label>
+        <small class="ajudaMsg" id="ajudaEmail">Seu endereço de e-mail principal ou um que você sempre usa.</small>
+        <input type="text" name="contato_email" id="contato_email" placeholder="Seu endereço de e-mail.">
+    </p>
+    <p>
+        <label for="contato_assunto">Assunto: <small id="toggleAssunto" class="ajudaBtn" data-target="ajudaAssunto">?</small></label></label>
+        <small class="ajudaMsg" id="ajudaAssunto">Um assunto resumido da mensagem que vai nos enviar.</small>
+        <input type="text" name="contato_assunto" id="contato_assunto" placeholder="Assunto do contato.">
+    </p>
+    <p>
+        <label for="contato_mensagem">Mensagem: <small id="toggleMensagem" class="ajudaBtn" data-target="ajudaMensagem">?</small></label></label>
+        <small class="ajudaMsg" id="ajudaMensagem">Sua mensagem com detalhes.</small>
+        <textarea name="contato_mensagem" id="contato_mensagem" placeholder="Escreva sua mensagem."></textarea>
+    </p>
+    <p>
+        <label for="contato_enviar"></label>
+        <button type="submit" name="contato_enviar" id="contato_enviar" value="Enviado">Enviar mensagem</button>
+    </p>
+</form>
+
+    </main>
+    <footer>RODAPÉ</footer>
+
+</div>    
+
+<script src="js/global.js"></script>
+<script src="js/contatos01.js"></script>
+</body>
+</html>

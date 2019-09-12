@@ -1,0 +1,55 @@
+
+<p>Clique no bot&atilde;o abaixo para carregar o documento via AJAX e mostrar.</p>
+
+<button id="load" data-documento="contatos.txt" data-destino="view">Carregar documento</button>
+
+<div id="view"></div>
+
+<script>
+
+// FunÃ§Ã£o que executa o AJAX
+function carrega(documento, destino){
+
+	// Exemplo de requisiÃ§Ã£o GET
+	var ajax = new XMLHttpRequest();
+
+	// Seta tipo de requisiÃ§Ã£o e URL com os parÃ¢metros
+	ajax.open("GET", documento, true);
+
+	// Envia a requisiÃ§Ã£o
+	ajax.send();
+
+	// Cria um evento para receber o retorno.
+	ajax.onreadystatechange = function() {
+	  
+	  	// Caso o state seja 4 e o http.status for 200, Ã© porque a requisiÃ§Ãµe deu certo.
+		if (ajax.readyState == 4 && ajax.status == 200) {
+		
+			// Formata uma saÃ­da
+			var docHTML = '<pre>' + ajax.responseText; + '</pre>';
+
+			// Exibe a saÃ­da
+			document.getElementById(destino).innerHTML = docHTML;
+
+		} else {
+
+			// Exibe erro
+            document.getElementById(destino).innerHTML = "Deu erro";
+
+        }
+	}
+}
+
+// Evento do botÃ£o
+document.getElementById('load').onclick = function(){
+
+	// Obtem o atributo com o nome do documento a ser aberto
+	var doc = this.getAttribute('data-documento');
+
+	// ObtÃ©m o atributo com o id do elemento de destino
+	var dest = this.getAttribute('data-destino');
+
+	carrega(doc, dest);
+}
+
+</script>

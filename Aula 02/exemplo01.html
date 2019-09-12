@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Exemplo 01</title>
+</head>
+<body>
+    <div id="view"></div>
+    <script>
+        var cor = 'azul';
+        var minhaDiv = document.getElementById('view');
+
+        minhaDiv.innerHTML = cor;
+
+        var cor = "cinza";
+
+        /*Formatação com template
+            Usamos `${Variável}` cercando com crase
+        */
+        minhaDiv.innerHTML = `<pre>&rarr; A cor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  escolhida é<br> ${cor}</pre>`;
+
+        //Códigos de Escape
+        //alert(`A cor escolhida é\n${cor}`);
+
+        minhaDiv.innerHTML = `Isso 
+funciona`;
+
+    </script>
+</body>
+</html>

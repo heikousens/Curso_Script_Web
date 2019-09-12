@@ -1,0 +1,80 @@
+<contato>
+	<data>10/09/2019 14:20 UTC</data>
+	<nome>Dilermano da Silva</nome>
+	email: diler@mano.com
+	assunto: Teste de dilermano
+	mensagem: ds fa gsgsg ghsfdh dfsh
+</contato>
+<contato>
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:20 UTC ~~~~~~~~~~
+	nome: Setembrino Trocatapas
+	email: set@brino.com
+	assunto: Teste do setembrino.
+	mensagem: sad fsa fs gdfshg fdhgj fhdkj
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:21 UTC ~~~~~~~~~~
+	nome: Dilermano da Silva
+	email: diler@mano.com
+	assunto: Teste de dilermano
+	mensagem: fd s gfds gsdf g
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:23 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:41 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:41 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:41 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:45 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:45 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:46 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:46 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:47 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 
+
+~~~~~~~~~~ Contato enviado em 10/09/2019 14:47 UTC ~~~~~~~~~~
+	nome: 
+	email: 
+	assunto: 
+	mensagem: 

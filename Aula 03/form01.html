@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Contatos - Site de Exemplo</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contatos.css">
+</head>
+<body>
+    
+<div class="container">
+
+    <header></header>
+    <nav></nav>
+    <main>
+        <h2>Fale Conosco</h2>
+        <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <p class="text-red text-center"><small>Todos os campos devem ser preenchidos</small></p>
+
+        <div id="mensagem-erro"></div>
+
+        <form action="contatos.php" method="post" name="contatos" id="contatos">
+            <p>
+                <label for="contato_nome">Seu nome:</label>
+                <input type="text" name="contato_nome" id="contato_nome" placeholder="Seu nome completo.">
+            </p>
+            <p>
+                <label for="contato_email">Seu e-mail:</label>
+                <input type="text" name="contato_email" id="contato_email" placeholder="Seu endereço de e-mail.">
+            </p>
+            <p>
+                <label for="contato_assunto">Assunto:</label>
+                <input type="text" name="contato_assunto" id="contato_assunto" placeholder="Assunto">
+            </p>
+            <p>
+                <label for="contato_mensagem">Mensagem:</label>
+                <textarea name="contato_mensagem" id="contato_mensagem" placeholder="Escreva sua mensagem."></textarea>
+            </p>
+            <p>
+                <label for="contato_enviar"></label>
+                <button type="submit" name="contato_enviar" value = "Mensagem enviada!" id="contato_enviar">Enviar mensagem</button>
+            </p>
+        </form>
+        
+    </main>
+    <footer></footer>
+
+</div>
+
+<style>
+        #btn-modal-fecha{
+            background: steelblue;
+            color: #fff;
+            display: none;
+            margin: 0 auto 1rem auto;
+            padding: .5rem;
+            font-size: inherit;
+            border: 1px solid grey;
+        }
+</style>
+
+<script>
+
+/* Validando formulário de contatos */
+var form = document.getElementById('contatos')
+
+form.onsubmit = function(){
+
+    var erro = out = '';
+
+        //Validando nome com pelo menos 2 caracteres
+        var nome = document.getElementById('contato_nome');
+        if(nome.value.length < 3){
+            erro += '<li>Seu nome precisa conter mais de 2 caracteres</li>';
+        };
+
+        //Validando e-mail com a presença do '@'
+        var email = document.getElementById('contato_email');
+        if(email.value.indexOf('@') < 0){
+            erro += '<li>E-mail inválido</li>';
+        };
+
+        //Validando assunto com pelo menos 5 caracteres
+        var assunto = document.getElementById('contato_assunto');
+        if(assunto.value.length < 5){
+            erro += '<li>O assunto precisa conter ao menos 5 caracteres</li>';
+        };
+
+        //Validando mensagem com pelo menos 5 caracteres
+        var mensagem = document.getElementById('contato_mensagem');
+        if(mensagem.value.length < 5){
+            erro += '<li>A mensagem precisa conter ao menos 5 caracteres</li>';
+        };
+        
+
+    if(erro == ''){
+        return true;
+    } else {
+
+        out = '<h3>Whoops!</h3>';
+        out += '<p>Ocorreram erros que impedem o envio do contato.</p>';
+        out += '<ul>' + erro + '</ul>';
+        out += '<p>Por favor, corrija as informações e tente novamente</p>';
+        out += '<div id="btn-modal-fecha"><button>Fechar</button></div>';
+
+        var mensagemErro = document.getElementById('mensagem-erro');
+        var modal = document.getElementById('btn-modal-fecha');
+        mensagemErro.innerHTML = out;
+        mensagemErro.style.display = 'table';
+        modal.style.display = 'block'; 
+
+    }
+    return false;
+}
+var btnFecha = document.getElementById('btn-modal-fecha');
+
+btnFecha.onclick = fechaModal;
+
+function fechaModal(){
+    modal.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>

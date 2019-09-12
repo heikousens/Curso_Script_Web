@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaSCript - Exemplo 02</title>
+</head>
+<body>
+
+<div id="view"></div>
+
+<script>
+var div = document.getElementById('view');
+
+var casa;
+casa = 'azul';
+casa = '25';
+
+var casa2 = casa + 2;
+div.innerHTML = casa2;
+
+primeiroNome = "Joca";
+ultimoNome = 'Silva';
+nomeCompleto = primeiroNome + ' da ' + ultimoNome;
+div.innerHTML = nomeCompleto;
+
+alert(div.innerHTML);
+
+primeiroNome += ' de Souza';
+primeiroNome = primeiroNome + ' de Souza';
+div.innerHTML += primeiroNome;
+
+
+    
+</script>
+    
+</body>
+</html>
